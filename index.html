@@ -742,7 +742,7 @@
     </div>
 
     <!-- La Liga Weekend Banner -->
-    <div class="laliga-banner" style="background:linear-gradient(135deg,#c8102e,#fbba00);border-bottom:2px solid rgba(251,186,0,.5);padding:12px 20px;text-align:center;position:relative;z-index:999;">
+    <div class="laliga-banner" style="background:linear-gradient(135deg,#001e3c,#0a3d6b);border-bottom:2px solid rgba(0,174,239,.3);padding:12px 20px;text-align:center;position:relative;z-index:999;">
         <div style="display:inline-flex;align-items:center;gap:8px;font-size:.85rem;font-weight:600;color:#fff;">
             <span style="font-size:1.2rem;">🏆</span>
             <span data-i18n="laligaBanner">THIS WEEKEND: 🏴󠁧󠁢󠁥󠁮󠁧󠁿 Liverpool vs Tottenham (SUN 17:30) | 🇪🇸 Real Madrid vs Elche (SAT 21:00) — Watch in 4K</span>
@@ -1047,28 +1047,28 @@
 
     <script>
         // Weekend Match Data - UPDATE WEEKLY OR MID-WEEK FOR CHAMPIONS LEAGUE
-        // Date Range: March 13-15, 2026 — La Liga Jornada 28 Weekend
-        // Updated: March 12, 2026 — 100% verified (LaLiga.com, PremierLeague.com, Bundesliga.com, Ajax.nl)
+        // Date Range: March 17-18, 2026 — UCL Round of 16 Second Legs
+        // Updated: March 16, 2026 — 100% verified (UEFA.com, mancity.com, beIN Sports)
         const weekendMatches = {
             fr: {
-                match1: { teams: "Monaco vs Brest", time: "SAM 21:05", league: "Ligue 1", flag: "🇫🇷" },
-                match2: { teams: "Leverkusen vs Bayern", time: "SA 15:30", league: "Der Klassiker", flag: "🇩🇪" }
+                match1: { teams: "Chelsea vs PSG", time: "MAR 21:00", league: "Champions League", flag: "🏆" },
+                match2: { teams: "Man City vs Real Madrid", time: "MAR 21:00", league: "Champions League", flag: "🏆" }
             },
             de: {
-                match1: { teams: "Leverkusen vs Bayern", time: "SA 15:30", league: "Der Klassiker", flag: "🇩🇪" },
-                match2: { teams: "Liverpool vs Tottenham", time: "SO 17:30", league: "Premier League", flag: "🏴󠁧󠁢󠁥󠁮󠁧󠁿" }
+                match1: { teams: "Arsenal vs Leverkusen", time: "DI 21:00", league: "Champions League", flag: "🏆" },
+                match2: { teams: "Bayern vs Atalanta", time: "MI 21:00", league: "Champions League", flag: "🏆" }
             },
             es: {
-                match1: { teams: "Real Madrid vs Elche", time: "SÁB 21:00", league: "La Liga Jornada 28", flag: "🇪🇸" },
-                match2: { teams: "Barcelona vs Sevilla", time: "DOM 16:15", league: "La Liga Jornada 28", flag: "🇪🇸" }
+                match1: { teams: "Man City vs Real Madrid", time: "MAR 21:00", league: "Champions League", flag: "🏆" },
+                match2: { teams: "Barcelona vs Newcastle", time: "MIÉ 18:45", league: "Champions League", flag: "🏆" }
             },
             nl: {
-                match1: { teams: "PSV vs NEC Nijmegen", time: "ZA 18:45", league: "Eredivisie", flag: "🇳🇱" },
-                match2: { teams: "Ajax vs Sparta Rotterdam", time: "ZA 21:00", league: "Eredivisie", flag: "🇳🇱" }
+                match1: { teams: "Man City vs Real Madrid", time: "DI 21:00", league: "Champions League", flag: "🏆" },
+                match2: { teams: "Arsenal vs Leverkusen", time: "DI 21:00", league: "Champions League", flag: "🏆" }
             },
             en: {
-                match1: { teams: "Liverpool vs Tottenham", time: "SUN 17:30", league: "Premier League", flag: "🏴󠁧󠁢󠁥󠁮󠁧󠁿" },
-                match2: { teams: "West Ham vs Man City", time: "SAT 21:00", league: "Premier League", flag: "🏴󠁧󠁢󠁥󠁮󠁧󠁿" }
+                match1: { teams: "Man City vs Real Madrid", time: "TUE 21:00", league: "Champions League", flag: "🏆" },
+                match2: { teams: "Arsenal vs Leverkusen", time: "TUE 21:00", league: "Champions League", flag: "🏆" }
             }
         };
 
@@ -1514,7 +1514,7 @@
             const bannerElement = document.querySelector('.laliga-banner span[data-i18n="laligaBanner"]');
 
             if (bannerElement && matches) {
-                const bannerText = `THIS WEEKEND: ${matches.match1.flag} ${matches.match1.teams} (${matches.match1.time}) | ${matches.match2.flag} ${matches.match2.teams} (${matches.match2.time}) — Watch in 4K`;
+                const bannerText = `THIS WEEK: ${matches.match1.flag} ${matches.match1.teams} (${matches.match1.time}) | ${matches.match2.flag} ${matches.match2.teams} (${matches.match2.time}) — Watch in 4K`;
                 bannerElement.textContent = bannerText;
             }
         }
