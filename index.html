@@ -742,10 +742,10 @@
     </div>
 
     <!-- La Liga Weekend Banner -->
-    <div class="laliga-banner" style="background:linear-gradient(135deg,#001e3c,#0a3d6b);border-bottom:2px solid rgba(0,174,239,.3);padding:12px 20px;text-align:center;position:relative;z-index:999;">
+    <div class="laliga-banner" style="background:linear-gradient(135deg,#c8102e,#fbba00);border-bottom:2px solid rgba(251,186,0,.5);padding:12px 20px;text-align:center;position:relative;z-index:999;">
         <div style="display:inline-flex;align-items:center;gap:8px;font-size:.85rem;font-weight:600;color:#fff;">
             <span style="font-size:1.2rem;">🏆</span>
-            <span data-i18n="laligaBanner">THIS WEEK: 🏆 Man City vs Real Madrid (TUE 21:00) | 🏆 Arsenal vs Leverkusen (TUE 21:00) — Watch in 4K</span>
+            <span data-i18n="laligaBanner">THIS WEEKEND: 🇪🇸 Atlético vs Barcelona (SÁB 21:00) | 🇫🇷 Lille vs Lens (SAM 21:05) — Watch in 4K</span>
         </div>
     </div>
 
@@ -1047,28 +1047,28 @@
 
     <script>
         // Weekend Match Data - UPDATE WEEKLY OR MID-WEEK FOR CHAMPIONS LEAGUE
-        // Date Range: March 17-18, 2026 — UCL Round of 16 Second Legs
-        // Updated: March 16, 2026 — 100% verified (UEFA.com, mancity.com, beIN Sports)
+        // Date Range: April 4-6, 2026 — La Liga Jornada 30 + Weekend Leagues
+        // Updated: April 3, 2026 — 100% verified (FCBarcelona.com, RealMadrid.com, PSG.fr, Bundesliga.com, Ajax.nl, TNT Sports)
         const weekendMatches = {
             fr: {
-                match1: { teams: "France vs Colombie", time: "DIM 20:00", league: "Amical FIFA", flag: "🇫🇷" },
-                match2: { teams: "Bosnie vs Italie", time: "MAR 20:45", league: "Playoff CM 2026", flag: "🏆" }
+                match1: { teams: "Lille vs Lens", time: "SAM 21:05", league: "Derby du Nord - Ligue 1", flag: "🇫🇷" },
+                match2: { teams: "Monaco vs Marseille", time: "DIM 20:45", league: "Ligue 1", flag: "⚽" }
             },
             de: {
-                match1: { teams: "Schweiz vs Deutschland", time: "FR 20:45", league: "FIFA Freundschaft", flag: "🇩🇪" },
-                match2: { teams: "Deutschland vs Ghana", time: "MO 20:45", league: "FIFA Freundschaft", flag: "🇩🇪" }
+                match1: { teams: "Stuttgart vs Dortmund", time: "SA 18:30", league: "Bundesliga", flag: "🇩🇪" },
+                match2: { teams: "Freiburg vs Bayern", time: "SA 15:30", league: "Bundesliga", flag: "🔴" }
             },
             es: {
-                match1: { teams: "España vs Serbia", time: "VIE 21:00", league: "Amistoso FIFA", flag: "🇪🇸" },
-                match2: { teams: "España vs Egipto", time: "MAR 21:00", league: "Amistoso FIFA", flag: "🇪🇸" }
+                match1: { teams: "Atlético vs Barcelona", time: "SÁB 21:00", league: "La Liga Jornada 30", flag: "🇪🇸" },
+                match2: { teams: "Mallorca vs Real Madrid", time: "SÁB 16:15", league: "La Liga Jornada 30", flag: "⚽" }
             },
             nl: {
-                match1: { teams: "Nederland vs Noorwegen", time: "VR 20:45", league: "FIFA Vriendschappelijk", flag: "🇳🇱" },
-                match2: { teams: "Nederland vs Ecuador", time: "DI 20:45", league: "FIFA Vriendschappelijk", flag: "🇳🇱" }
+                match1: { teams: "Ajax vs FC Twente", time: "ZA 21:00", league: "Eredivisie", flag: "🇳🇱" },
+                match2: { teams: "Volendam vs Feyenoord", time: "ZO 13:30", league: "Eredivisie", flag: "⚽" }
             },
             en: {
-                match1: { teams: "England vs Uruguay", time: "FRI 20:45", league: "FIFA Friendly", flag: "🏴󠁧󠁢󠁥󠁮󠁧󠁿" },
-                match2: { teams: "England vs Japan", time: "TUE 20:45", league: "FIFA Friendly", flag: "🏴󠁧󠁢󠁥󠁮󠁧󠁿" }
+                match1: { teams: "Man City vs Liverpool", time: "SAT 13:45", league: "FA Cup Quarter-Final", flag: "🏴󠁧󠁢󠁥󠁮󠁧󠁿" },
+                match2: { teams: "Southampton vs Arsenal", time: "SAT 21:00", league: "FA Cup Quarter-Final", flag: "🏆" }
             }
         };
 
@@ -1514,7 +1514,7 @@
             const bannerElement = document.querySelector('.laliga-banner span[data-i18n="laligaBanner"]');
 
             if (bannerElement && matches) {
-                const bannerText = `THIS WEEK: ${matches.match1.flag} ${matches.match1.teams} (${matches.match1.time}) | ${matches.match2.flag} ${matches.match2.teams} (${matches.match2.time}) — Watch in 4K`;
+                const bannerText = `THIS WEEKEND: ${matches.match1.flag} ${matches.match1.teams} (${matches.match1.time}) | ${matches.match2.flag} ${matches.match2.teams} (${matches.match2.time}) — Watch in 4K`;
                 bannerElement.textContent = bannerText;
             }
         }
