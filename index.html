@@ -745,7 +745,7 @@
     <div class="laliga-banner" style="background:linear-gradient(135deg,#001e3c,#0a2540);border-bottom:2px solid rgba(0,174,239,.3);padding:12px 20px;text-align:center;position:relative;z-index:999;">
         <div style="display:inline-flex;align-items:center;gap:8px;font-size:.85rem;font-weight:600;color:#fff;">
             <span style="font-size:1.2rem;">🏆</span>
-            <span data-i18n="laligaBanner">THIS WEEK: 🏆 Liverpool vs PSG (TUE 20:00) | 🏆 Arsenal vs Sporting CP (WED 20:00) — Watch in 4K</span>
+            <span data-i18n="laligaBanner">THIS WEEK: 🏴󠁧󠁢󠁥󠁮󠁧󠁿 Liverpool vs Chelsea (SAT 13:30) | ⚔️ Barcelona vs Real Madrid (SUN 21:00) — Watch in 4K</span>
         </div>
     </div>
 
@@ -1047,30 +1047,30 @@
 
     <script>
         // Weekend Match Data - UPDATE WEEKLY OR MID-WEEK FOR CHAMPIONS LEAGUE
-        // Date Range: April 14-15, 2026 — Champions League Quarter-Final Second Legs
-        // Updated: April 14, 2026 — 100% verified (atleticodemadrid.com, liverpoolfc.com, arsenal.com, fcbayern.com, UEFA.com)
+        // Date Range: May 9-10, 2026 — La Liga MD35 (El Clásico) + Bundesliga MD33 + Ligue 1 MD33 + Premier League + Eredivisie
+        // Updated: May 7, 2026 — 100% verified (FCBarcelona.com, RealMadrid.com, PSG.fr, Bundesliga.com, ChelseaFC.com, Feyenoord)
         const weekendMatches = {
-    fr: {
-        match1: { teams: "PSG vs Lorient", time: "SAM 17:00", league: "Ligue 1", flag: "🇫🇷" },
-        match2: { teams: "Olympique Lyon vs Stade Rennais", time: "DIM 20:45", league: "Ligue 1", flag: "🇫🇷" },
-    },
-    de: {
-        match1: { teams: "Bayern vs Heidenheim", time: "SA 15:30", league: "Bundesliga", flag: "🇩🇪" },
-        match2: { teams: "Frankfurt vs HSV", time: "SA 15:30", league: "Bundesliga", flag: "🇩🇪" },
-    },
-    es: {
-        match1: { teams: "Valencia vs Atleti", time: "SÁB 16:15", league: "Primera Division", flag: "🇪🇸" },
-        match2: { teams: "Sevilla FC vs Real Sociedad", time: "LUN 21:00", league: "Primera Division", flag: "🇪🇸" },
-    },
-    nl: {
-        match1: { teams: "Ajax vs PSV", time: "ZA 20:00", league: "Eredivisie", flag: "🇳🇱" },
-        match2: { teams: "Sittard vs Feyenoord", time: "ZO 14:30", league: "Eredivisie", flag: "🇳🇱" },
-    },
-    en: {
-        match1: { teams: "Man United vs Liverpool", time: "SUN 16:30", league: "Premier League", flag: "🏴󠁧󠁢󠁥󠁮󠁧󠁿" },
-        match2: { teams: "Arsenal vs Fulham", time: "SAT 18:30", league: "Premier League", flag: "🏴󠁧󠁢󠁥󠁮󠁧󠁿" },
-    },
-};
+            fr: {
+                match1: { teams: "PSG vs Brest", time: "DIM 21:00", league: "Ligue 1", flag: "🇫🇷" },
+                match2: { teams: "Barcelona vs Real Madrid", time: "DIM 21:00", league: "El Clásico", flag: "⚔️" }
+            },
+            de: {
+                match1: { teams: "Wolfsburg vs Bayern", time: "SA 18:30", league: "Bundesliga", flag: "🇩🇪" },
+                match2: { teams: "Barcelona vs Real Madrid", time: "SO 21:00", league: "El Clásico", flag: "⚔️" }
+            },
+            es: {
+                match1: { teams: "Barcelona vs Real Madrid", time: "DOM 21:00", league: "El Clásico", flag: "⚔️" },
+                match2: { teams: "Atlético vs Celta", time: "SÁB 18:30", league: "La Liga", flag: "🇪🇸" }
+            },
+            nl: {
+                match1: { teams: "Feyenoord vs AZ", time: "ZO 16:45", league: "Eredivisie", flag: "🇳🇱" },
+                match2: { teams: "Barcelona vs Real Madrid", time: "ZO 21:00", league: "El Clásico", flag: "⚔️" }
+            },
+            en: {
+                match1: { teams: "Liverpool vs Chelsea", time: "SAT 13:30", league: "Premier League", flag: "🏴󠁧󠁢󠁥󠁮󠁧󠁿" },
+                match2: { teams: "Barcelona vs Real Madrid", time: "SUN 21:00", league: "El Clásico", flag: "⚔️" }
+            }
+        };
 
         // Translations (adapted from Vexacast for Stryvix4k)
         const translations = {
