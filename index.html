@@ -745,7 +745,7 @@
     <div class="laliga-banner" style="background:linear-gradient(135deg,#001e3c,#0a2540);border-bottom:2px solid rgba(0,174,239,.3);padding:12px 20px;text-align:center;position:relative;z-index:999;">
         <div style="display:inline-flex;align-items:center;gap:8px;font-size:.85rem;font-weight:600;color:#fff;">
             <span style="font-size:1.2rem;">🏆</span>
-            <span data-i18n="laligaBanner">THIS WEEK: 🏴󠁧󠁢󠁥󠁮󠁧󠁿 Liverpool vs Chelsea (SAT 13:30) | ⚔️ Barcelona vs Real Madrid (SUN 21:00) — Watch in 4K</span>
+            <span data-i18n="laligaBanner">WORLD CUP 2026: 🏴󠁧󠁢󠁥󠁮󠁧󠁿 England vs Ghana (TUE 22:00) | 🏆 England vs Panama (SAT 23:00) — Watch in 4K</span>
         </div>
     </div>
 
@@ -756,7 +756,7 @@
         <div class="grid-pattern"></div>
 
         <div class="hero-content">
-            <div class="notice"><span data-i18n="notice">🔥 March Special: Premium IPTV from £17/month • WhatsApp:</span> <a href="https://wa.me/33773436514">+33 7 73 43 65 14</a></div>
+            <div class="notice"><span data-i18n="notice">🏆 World Cup 2026: Every match LIVE in 4K • Premium IPTV from £17/month • WhatsApp:</span> <a href="https://wa.me/33773436514">+33 7 73 43 65 14</a></div>
             <div class="badge"><span class="badge-dot"></span> <span data-i18n="badge">50,847 Active Subscribers</span></div>
             <h1 class="hero-title"><span data-i18n="heroTitle1">Stryvix4k - Stream Everything.</span> <span data-i18n="heroTitle2">Pay Less.</span></h1>
             <p class="hero-sub" data-i18n="heroSub">Access <strong>49,000+ live channels</strong> and <strong>80,000+ movies</strong> in stunning 4K. No contracts, no hidden fees. Just entertainment.</p>
@@ -1047,35 +1047,36 @@
 
     <script>
         // Weekend Match Data - UPDATE WEEKLY OR MID-WEEK FOR CHAMPIONS LEAGUE
-        // Date Range: May 9-10, 2026 — La Liga MD35 (El Clásico) + Bundesliga MD33 + Ligue 1 MD33 + Premier League + Eredivisie
+        // Date Range: June 21-27, 2026 — FIFA World Cup 2026 group stage (geo-targeted per language)
         // Updated: May 7, 2026 — 100% verified (FCBarcelona.com, RealMadrid.com, PSG.fr, Bundesliga.com, ChelseaFC.com, Feyenoord)
+        // World Cup 2026 — group stage (CET). Source: Euronews WC2026 EU kickoff guide.
         const weekendMatches = {
             fr: {
-                match1: { teams: "PSG vs Brest", time: "DIM 21:00", league: "Ligue 1", flag: "🇫🇷" },
-                match2: { teams: "Barcelona vs Real Madrid", time: "DIM 21:00", league: "El Clásico", flag: "⚔️" }
+                match1: { teams: "France vs Irak", time: "LUN 23:00", league: "Coupe du Monde", flag: "🇫🇷" },
+                match2: { teams: "Norvège vs France", time: "VEN 21:00", league: "Coupe du Monde", flag: "🏆" }
             },
             de: {
-                match1: { teams: "Wolfsburg vs Bayern", time: "SA 18:30", league: "Bundesliga", flag: "🇩🇪" },
-                match2: { teams: "Barcelona vs Real Madrid", time: "SO 21:00", league: "El Clásico", flag: "⚔️" }
+                match1: { teams: "Ecuador vs Deutschland", time: "DO 22:00", league: "WM 2026", flag: "🇩🇪" },
+                match2: { teams: "England vs Ghana", time: "DI 22:00", league: "WM 2026", flag: "🏆" }
             },
             es: {
-                match1: { teams: "Barcelona vs Real Madrid", time: "DOM 21:00", league: "El Clásico", flag: "⚔️" },
-                match2: { teams: "Atlético vs Celta", time: "SÁB 18:30", league: "La Liga", flag: "🇪🇸" }
+                match1: { teams: "Uruguay vs España", time: "SÁB 02:00", league: "Mundial 2026", flag: "🇪🇸" },
+                match2: { teams: "Francia vs Irak", time: "LUN 23:00", league: "Mundial 2026", flag: "🏆" }
             },
             nl: {
-                match1: { teams: "Feyenoord vs AZ", time: "ZO 16:45", league: "Eredivisie", flag: "🇳🇱" },
-                match2: { teams: "Barcelona vs Real Madrid", time: "ZO 21:00", league: "El Clásico", flag: "⚔️" }
+                match1: { teams: "Tunesië vs Nederland", time: "VR 01:00", league: "WK 2026", flag: "🇳🇱" },
+                match2: { teams: "Ecuador vs Duitsland", time: "DO 22:00", league: "WK 2026", flag: "🏆" }
             },
             en: {
-                match1: { teams: "Liverpool vs Chelsea", time: "SAT 13:30", league: "Premier League", flag: "🏴󠁧󠁢󠁥󠁮󠁧󠁿" },
-                match2: { teams: "Barcelona vs Real Madrid", time: "SUN 21:00", league: "El Clásico", flag: "⚔️" }
+                match1: { teams: "England vs Ghana", time: "TUE 22:00", league: "World Cup", flag: "🏴󠁧󠁢󠁥󠁮󠁧󠁿" },
+                match2: { teams: "England vs Panama", time: "SAT 23:00", league: "World Cup", flag: "🏆" }
             }
         };
 
         // Translations (adapted from Vexacast for Stryvix4k)
         const translations = {
             en: {
-                notice: "🔥 March Special: Premium IPTV from £17/month • WhatsApp:",
+                notice: "🏆 World Cup 2026: Every match LIVE in 4K • Premium IPTV from £17/month • WhatsApp:",
                 badge: "50,847 Active Subscribers",
                 heroTitle1: "Stryvix4k - Stream Everything.",
                 heroTitle2: "Pay Less.",
@@ -1160,7 +1161,7 @@
                 navReviews: "Reviews"
             },
             de: {
-                notice: "🔥 März-Angebot: Premium IPTV ab £17/Monat • WhatsApp:",
+                notice: "🏆 WM 2026: Jedes Spiel LIVE in 4K • Premium IPTV ab £17/Monat • WhatsApp:",
                 badge: "50.847 Aktive Abonnenten",
                 heroTitle1: "Stryvix4k - Alles streamen.",
                 heroTitle2: "Weniger zahlen.",
@@ -1244,7 +1245,7 @@
                 navReviews: "Bewertungen"
             },
             fr: {
-                notice: "🔥 Offre Mars: IPTV Premium dès £17/mois • WhatsApp:",
+                notice: "🏆 Coupe du Monde 2026: Chaque match EN DIRECT en 4K • IPTV Premium dès £17/mois • WhatsApp:",
                 badge: "50 847 Abonnés Actifs",
                 heroTitle1: "Stryvix4k - Streamez Tout.",
                 heroTitle2: "Payez Moins.",
@@ -1328,7 +1329,7 @@
                 navReviews: "Avis"
             },
             nl: {
-                notice: "🔥 Maart Aanbieding: Premium IPTV vanaf £17/maand • WhatsApp:",
+                notice: "🏆 WK 2026: Elke wedstrijd LIVE in 4K • Premium IPTV vanaf £17/maand • WhatsApp:",
                 badge: "50.847 Actieve Abonnees",
                 heroTitle1: "Stryvix4k - Stream Alles.",
                 heroTitle2: "Betaal Minder.",
@@ -1412,7 +1413,7 @@
                 navReviews: "Beoordelingen"
             },
             es: {
-                notice: "🔥 Oferta Marzo: IPTV Premium desde £17/mes • WhatsApp:",
+                notice: "🏆 Mundial 2026: Cada partido EN DIRECTO en 4K • IPTV Premium desde £17/mes • WhatsApp:",
                 badge: "50.847 Suscriptores Activos",
                 heroTitle1: "Stryvix4k - Transmite Todo.",
                 heroTitle2: "Paga Menos.",
@@ -1514,7 +1515,7 @@
             const bannerElement = document.querySelector('.laliga-banner span[data-i18n="laligaBanner"]');
 
             if (bannerElement && matches) {
-                const bannerText = `THIS WEEK: ${matches.match1.flag} ${matches.match1.teams} (${matches.match1.time}) | ${matches.match2.flag} ${matches.match2.teams} (${matches.match2.time}) — Watch in 4K`;
+                const bannerText = `WORLD CUP 2026: ${matches.match1.flag} ${matches.match1.teams} (${matches.match1.time}) | ${matches.match2.flag} ${matches.match2.teams} (${matches.match2.time}) — Watch in 4K`;
                 bannerElement.textContent = bannerText;
             }
         }
