@@ -33,6 +33,8 @@
             --accent:#764ba2;
             --accent-light:#9F7AEA;
             --cta-accent:#FF6B35;
+            --wc-gold:#FFD700;
+            --wc-green:#16a34a;
             --bg-dark:#09090B;
             --bg-card:#18181B;
             --bg-elevated:#27272A;
@@ -72,7 +74,7 @@
         }
         .orb-1{width:400px;height:400px;background:var(--primary);top:-100px;right:-100px;animation-delay:0s;}
         .orb-2{width:300px;height:300px;background:var(--accent);bottom:10%;left:-50px;animation-delay:-7s;}
-        .orb-3{width:200px;height:200px;background:var(--primary-light);top:40%;right:10%;animation-delay:-14s;}
+        .orb-3{width:200px;height:200px;background:var(--wc-gold);opacity:.18;top:40%;right:10%;animation-delay:-14s;}
         @keyframes float{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(30px,30px) scale(1.1)}}
 
         /* Grid pattern overlay */
@@ -132,6 +134,20 @@
             animation:pulse-dot 2s ease-in-out infinite;
         }
         @keyframes pulse-dot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(1.2)}}
+
+        /* World Cup 2026 theme accents */
+        .wc-ball{font-size:1.2rem;display:inline-block;animation:wc-bounce 1.4s ease-in-out infinite;}
+        @keyframes wc-bounce{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-4px) rotate(20deg)}}
+        .wc-chip{
+            display:inline-flex;align-items:center;gap:8px;
+            background:rgba(255,215,0,.08);
+            border:1px solid rgba(255,215,0,.35);
+            color:var(--wc-gold);
+            padding:7px 16px;border-radius:50px;
+            font-size:.8rem;font-weight:700;letter-spacing:.02em;
+            margin-bottom:18px;
+        }
+        .wc-chip .wc-ball{font-size:1rem;}
 
         .hero-title{
             font-size:clamp(2rem,7vw,3.5rem);
@@ -741,10 +757,10 @@
         <button class="lang-btn" data-lang="es">ES</button>
     </div>
 
-    <!-- La Liga Weekend Banner -->
-    <div class="laliga-banner" style="background:linear-gradient(135deg,#001e3c,#0a2540);border-bottom:2px solid rgba(0,174,239,.3);padding:12px 20px;text-align:center;position:relative;z-index:999;">
+    <!-- World Cup 2026 Banner -->
+    <div class="laliga-banner" style="background:linear-gradient(135deg,#0a2540,#1a0b2e);border-top:2px solid var(--wc-gold);border-bottom:2px solid rgba(255,215,0,.35);padding:12px 20px;text-align:center;position:relative;z-index:999;">
         <div style="display:inline-flex;align-items:center;gap:8px;font-size:.85rem;font-weight:600;color:#fff;">
-            <span style="font-size:1.2rem;">🏆</span>
+            <span class="wc-ball">⚽</span>
             <span data-i18n="laligaBanner">WORLD CUP 2026: 🏴󠁧󠁢󠁥󠁮󠁧󠁿 England vs Ghana (TUE 22:00) | 🏆 England vs Panama (SAT 23:00) — Watch in 4K</span>
         </div>
     </div>
@@ -756,6 +772,7 @@
         <div class="grid-pattern"></div>
 
         <div class="hero-content">
+            <div class="wc-chip"><span class="wc-ball">⚽</span> <span data-i18n="wcChip">WORLD CUP 2026 · EVERY MATCH LIVE IN 4K</span></div>
             <div class="notice"><span data-i18n="notice">🏆 World Cup 2026: Every match LIVE in 4K • Premium IPTV from £17/month • WhatsApp:</span> <a href="https://wa.me/33773436514">+33 7 73 43 65 14</a></div>
             <div class="badge"><span class="badge-dot"></span> <span data-i18n="badge">50,847 Active Subscribers</span></div>
             <h1 class="hero-title"><span data-i18n="heroTitle1">Stryvix4k - Stream Everything.</span> <span data-i18n="heroTitle2">Pay Less.</span></h1>
@@ -1076,6 +1093,7 @@
         // Translations (adapted from Vexacast for Stryvix4k)
         const translations = {
             en: {
+                wcChip: "WORLD CUP 2026 · EVERY MATCH LIVE IN 4K",
                 notice: "🏆 World Cup 2026: Every match LIVE in 4K • Premium IPTV from £17/month • WhatsApp:",
                 badge: "50,847 Active Subscribers",
                 heroTitle1: "Stryvix4k - Stream Everything.",
@@ -1161,6 +1179,7 @@
                 navReviews: "Reviews"
             },
             de: {
+                wcChip: "WM 2026 · JEDES SPIEL LIVE IN 4K",
                 notice: "🏆 WM 2026: Jedes Spiel LIVE in 4K • Premium IPTV ab £17/Monat • WhatsApp:",
                 badge: "50.847 Aktive Abonnenten",
                 heroTitle1: "Stryvix4k - Alles streamen.",
@@ -1245,6 +1264,7 @@
                 navReviews: "Bewertungen"
             },
             fr: {
+                wcChip: "COUPE DU MONDE 2026 · CHAQUE MATCH EN DIRECT EN 4K",
                 notice: "🏆 Coupe du Monde 2026: Chaque match EN DIRECT en 4K • IPTV Premium dès £17/mois • WhatsApp:",
                 badge: "50 847 Abonnés Actifs",
                 heroTitle1: "Stryvix4k - Streamez Tout.",
@@ -1329,6 +1349,7 @@
                 navReviews: "Avis"
             },
             nl: {
+                wcChip: "WK 2026 · ELKE WEDSTRIJD LIVE IN 4K",
                 notice: "🏆 WK 2026: Elke wedstrijd LIVE in 4K • Premium IPTV vanaf £17/maand • WhatsApp:",
                 badge: "50.847 Actieve Abonnees",
                 heroTitle1: "Stryvix4k - Stream Alles.",
@@ -1413,6 +1434,7 @@
                 navReviews: "Beoordelingen"
             },
             es: {
+                wcChip: "MUNDIAL 2026 · CADA PARTIDO EN DIRECTO EN 4K",
                 notice: "🏆 Mundial 2026: Cada partido EN DIRECTO en 4K • IPTV Premium desde £17/mes • WhatsApp:",
                 badge: "50.847 Suscriptores Activos",
                 heroTitle1: "Stryvix4k - Transmite Todo.",
