@@ -734,6 +734,81 @@
         @media(prefers-reduced-motion:reduce){
             *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
         }
+
+        /* ===== World Cup Hub ===== */
+        .wchub{max-width:1180px;margin:0 auto;padding:64px 24px 8px}
+        .wchub-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-bottom:18px;margin-bottom:28px;border-bottom:1px solid rgba(255,255,255,.09);position:relative}
+        .wchub-head::after{content:"";position:absolute;left:0;bottom:-1px;width:132px;height:2px;background:linear-gradient(90deg,var(--wc-gold),transparent)}
+        .wchub-eyebrow{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--wc-gold);margin-bottom:10px}
+        .wchub-head h2{font-size:clamp(26px,4vw,40px);font-weight:800;letter-spacing:-.02em;line-height:1.03;text-wrap:balance}
+        .wchub-stamp{display:inline-flex;align-items:center;gap:9px;font-size:13px;color:var(--gray-400);font-weight:500;white-space:nowrap;padding-bottom:4px}
+        .wchub-stamp .d{width:8px;height:8px;border-radius:50%;background:var(--wc-gold);box-shadow:0 0 0 4px rgba(255,215,0,.16)}
+        .wchub-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:20px;align-items:stretch}
+        .wchub-feature{position:relative;overflow:hidden;isolation:isolate;background:linear-gradient(160deg,rgba(129,140,248,.10),rgba(255,255,255,.045));border:1px solid rgba(255,255,255,.16);border-radius:20px;padding:30px 30px 26px;display:flex;flex-direction:column}
+        .wchub-feature .glow{position:absolute;inset:auto -60px 30% auto;width:340px;height:340px;z-index:-1;background:radial-gradient(circle,rgba(159,122,234,.4),transparent 65%);filter:blur(8px);pointer-events:none}
+        .wchub-tag{align-self:flex-start;display:inline-flex;align-items:center;gap:7px;font-size:11.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:6px 12px;border-radius:999px;margin-bottom:18px;color:#1a1406;background:linear-gradient(135deg,var(--wc-gold),#f0b429)}
+        .wchub-feature h3{font-size:clamp(22px,2.8vw,29px);font-weight:800;letter-spacing:-.02em;line-height:1.1;text-wrap:balance;margin-bottom:14px;max-width:22ch}
+        .wchub-feature p{color:var(--gray-400);font-size:15.5px;max-width:54ch;margin-bottom:22px}
+        .wchub-feature p b{color:var(--white);font-weight:600}
+        .wchub-fx{display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:16px 0;border-top:1px solid rgba(255,255,255,.09);border-bottom:1px solid rgba(255,255,255,.09);margin-bottom:16px}
+        .wchub-fx .side{display:flex;align-items:center;gap:11px;font-size:20px;font-weight:800;letter-spacing:-.01em}
+        .wchub-fx .side .flag{font-size:26px;line-height:1}
+        .wchub-fx .vs{font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--wc-gold);text-transform:uppercase}
+        .wchub-meta{display:flex;gap:22px;flex-wrap:wrap;color:var(--gray-500);font-size:13.5px;font-weight:500;margin-bottom:22px;font-variant-numeric:tabular-nums}
+        .wchub-meta span{display:inline-flex;align-items:center;gap:7px}
+        .wchub-side{display:flex;flex-direction:column;gap:20px}
+        .wchub-panel{background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.09);border-radius:20px;padding:20px 22px;flex:1}
+        .wchub-panel-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+        .wchub-panel-head h4{font-size:13px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--white)}
+        .wchub-round{font-size:11px;font-weight:600;letter-spacing:.06em;color:var(--gray-500);text-transform:uppercase}
+        .wchub-live{color:var(--warning);display:inline-flex;align-items:center;gap:6px}
+        .wchub-live::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--warning);box-shadow:0 0 0 3px rgba(245,158,11,.2);animation:wchubPulse 1.8s ease-in-out infinite}
+        .wchub-results,.wchub-fixtures{list-style:none;display:flex;flex-direction:column;gap:2px}
+        .wchub-result{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px;padding:10px 8px;border-radius:12px;transition:background .18s ease}
+        .wchub-result:hover,.wchub-fixture:hover{background:rgba(255,255,255,.06)}
+        .wchub-team{display:flex;align-items:center;gap:9px;font-size:14.5px;font-weight:600}
+        .wchub-team .flag{font-size:19px;line-height:1}
+        .wchub-team.away{justify-content:flex-end;text-align:right}
+        .wchub-score{font-size:17px;font-weight:800;color:var(--wc-gold);font-variant-numeric:tabular-nums;padding:2px 10px;white-space:nowrap}
+        .wchub-cap{grid-column:1/-1;font-size:11.5px;color:var(--gray-500);font-weight:500;padding:0 8px 2px}
+        .wchub-cap b{color:#f0b429;font-weight:700}
+        .wchub-fixture{display:grid;grid-template-columns:1fr auto;align-items:center;gap:6px 12px;padding:10px 8px;border-radius:12px;transition:background .18s ease}
+        .wchub-fmatch{display:flex;align-items:center;gap:9px;font-size:14.5px;font-weight:600}
+        .wchub-fmatch .flag{font-size:18px;line-height:1}
+        .wchub-fmatch .sep{color:var(--gray-500);font-weight:500}
+        .wchub-ftime{font-size:14px;font-weight:700;color:var(--white);font-variant-numeric:tabular-nums;white-space:nowrap}
+        .wchub-fcap{grid-column:1/-1;font-size:11.5px;color:var(--gray-500);font-weight:500;padding:0 8px}
+        .wchub-qf{margin-top:20px}
+        .wchub-qf-head{display:flex;align-items:baseline;gap:12px;margin-bottom:14px;flex-wrap:wrap}
+        .wchub-qf-head h4{font-size:13px;font-weight:700;letter-spacing:.13em;text-transform:uppercase}
+        .wchub-qf-head span{font-size:12px;color:var(--gray-500);font-weight:500}
+        .wchub-rail{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+        .wchub-card{background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.09);border-radius:16px;padding:16px;transition:transform .18s ease,border-color .18s ease}
+        .wchub-card:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.16)}
+        .wchub-card.set{border-color:rgba(255,215,0,.3);background:linear-gradient(160deg,rgba(255,215,0,.06),rgba(255,255,255,.045))}
+        .wchub-when{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#f0b429;margin-bottom:12px;font-variant-numeric:tabular-nums}
+        .wchub-teams{display:flex;flex-direction:column;gap:8px;font-size:14px;font-weight:600}
+        .wchub-teams .t{display:flex;align-items:center;gap:9px}
+        .wchub-teams .t .flag{font-size:17px;line-height:1}
+        .wchub-teams .t.tbd{color:var(--gray-500);font-weight:500}
+        .wchub-teams .t .flag.q{filter:grayscale(1);opacity:.5}
+        .wchub-where{margin-top:12px;font-size:11.5px;color:var(--gray-500);font-weight:500}
+        .wchub-cta{margin-top:24px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;padding:24px 28px;border-radius:20px;background:linear-gradient(120deg,rgba(102,126,234,.16),rgba(118,75,162,.16));border:1px solid rgba(159,122,234,.28)}
+        .wchub-cta .copy strong{display:block;font-size:18px;font-weight:800;letter-spacing:-.01em;margin-bottom:4px}
+        .wchub-cta .copy span{color:var(--gray-400);font-size:14px}
+        .wchub-btn{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;text-decoration:none;color:#fff;padding:13px 24px;border-radius:12px;white-space:nowrap;background:linear-gradient(135deg,var(--primary),var(--accent));box-shadow:0 8px 24px rgba(118,75,162,.4);transition:transform .16s ease,box-shadow .16s ease}
+        .wchub-btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(118,75,162,.55)}
+        .wchub-btn:focus-visible,.wchub-card:focus-visible{outline:2px solid var(--wc-gold);outline-offset:3px}
+        .wchub-feature .wchub-btn{margin-top:auto}
+        @keyframes wchubPulse{0%,100%{opacity:1}50%{opacity:.35}}
+        @media(max-width:900px){.wchub-grid{grid-template-columns:1fr}.wchub-rail{grid-template-columns:repeat(2,1fr)}}
+        @media(max-width:540px){.wchub-rail{grid-template-columns:1fr}.wchub-feature{padding:24px 22px}}
+
+        /* ===== Pricing World Cup add-on ===== */
+        .wc-addon{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:14px 0 2px;padding:10px 14px;border-radius:12px;background:linear-gradient(135deg,rgba(255,215,0,.12),rgba(240,180,41,.05));border:1px solid rgba(255,215,0,.35)}
+        .wc-addon-tag{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:var(--wc-gold);white-space:nowrap}
+        .wc-addon-copy{font-size:12.5px;color:var(--gray-300);font-weight:500}
+        .wc-addon-price{color:var(--wc-gold);font-weight:800;font-size:14px;white-space:nowrap}
     </style>
 </head>
 <body>
@@ -800,6 +875,113 @@
         </div>
     </section>
 
+    <!-- World Cup 2026 Hub -->
+    <section class="wchub" id="worldcup">
+        <div class="wchub-head">
+            <div>
+                <div class="wchub-eyebrow">World Cup 2026 · Knockout Rounds</div>
+                <h2>Road to the Final</h2>
+            </div>
+            <div class="wchub-stamp"><span class="d"></span>Updated 5 Jul — quarter-finals confirmed</div>
+        </div>
+        <div class="wchub-grid">
+            <article class="wchub-feature">
+                <div class="glow"></div>
+                <span class="wchub-tag">🏆 Quarter-final · Thu 9 July</span>
+                <h3>The rematch nobody in Rabat forgot</h3>
+                <p>Morocco knocked the Netherlands out on penalties, then took hosts Canada apart <b>3&ndash;0</b> in Houston. Their reward is a familiar face: <b>France</b> &mdash; the side that ended the dream in the 2022 semi-final. Round two, Thursday night in Boston.</p>
+                <div class="wchub-fx">
+                    <span class="side"><span class="flag">🇲🇦</span>Morocco</span>
+                    <span class="vs">vs</span>
+                    <span class="side">France<span class="flag">🇫🇷</span></span>
+                </div>
+                <div class="wchub-meta">
+                    <span>🕘 22:00 CET · 4:00 PM ET</span>
+                    <span>📍 Gillette Stadium, Boston</span>
+                </div>
+                <a class="wchub-btn" href="https://wa.me/33773436514?text=Hi!%20I%20want%20to%20watch%20the%20World%20Cup%20in%204K">Watch live in 4K →</a>
+            </article>
+            <div class="wchub-side">
+                <section class="wchub-panel">
+                    <div class="wchub-panel-head"><h4>Latest Results</h4><span class="wchub-round">Round of 16</span></div>
+                    <ul class="wchub-results">
+                        <li class="wchub-result">
+                            <span class="wchub-team"><span class="flag">🇲🇦</span>Morocco</span>
+                            <span class="wchub-score">3&ndash;0</span>
+                            <span class="wchub-team away">Canada<span class="flag">🇨🇦</span></span>
+                            <span class="wchub-cap"><b>FT</b> · Houston · Atlas Lions cruise into the last eight</span>
+                        </li>
+                        <li class="wchub-result">
+                            <span class="wchub-team"><span class="flag">🇫🇷</span>France</span>
+                            <span class="wchub-score">1&ndash;0</span>
+                            <span class="wchub-team away">Paraguay<span class="flag">🇵🇾</span></span>
+                            <span class="wchub-cap"><b>FT</b> · Philadelphia · Mbappé penalty (70') sends France through</span>
+                        </li>
+                    </ul>
+                </section>
+                <section class="wchub-panel">
+                    <div class="wchub-panel-head"><h4>Tonight</h4><span class="wchub-round wchub-live">Live in 4K</span></div>
+                    <ul class="wchub-fixtures">
+                        <li class="wchub-fixture">
+                            <span class="wchub-fmatch"><span class="flag">🇧🇷</span>Brazil <span class="sep">vs</span> Norway<span class="flag">🇳🇴</span></span>
+                            <span class="wchub-ftime">22:00</span>
+                            <span class="wchub-fcap">Round of 16 · New York / New Jersey</span>
+                        </li>
+                        <li class="wchub-fixture">
+                            <span class="wchub-fmatch"><span class="flag">🇲🇽</span>Mexico <span class="sep">vs</span> England<span class="flag">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span></span>
+                            <span class="wchub-ftime">02:00</span>
+                            <span class="wchub-fcap">Round of 16 · Mexico City</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        <section class="wchub-qf">
+            <div class="wchub-qf-head"><h4>Quarter-finals</h4><span>9&ndash;11 July · winners into the semis</span></div>
+            <div class="wchub-rail">
+                <div class="wchub-card set" tabindex="0">
+                    <div class="wchub-when">Thu 9 Jul · 22:00</div>
+                    <div class="wchub-teams">
+                        <span class="t"><span class="flag">🇲🇦</span>Morocco</span>
+                        <span class="t"><span class="flag">🇫🇷</span>France</span>
+                    </div>
+                    <div class="wchub-where">Boston</div>
+                </div>
+                <div class="wchub-card" tabindex="0">
+                    <div class="wchub-when">Fri 10 Jul · 21:00</div>
+                    <div class="wchub-teams">
+                        <span class="t tbd"><span class="flag q">🇺🇸</span>USA / Belgium</span>
+                        <span class="t tbd"><span class="flag q">🇪🇸</span>Spain / Portugal</span>
+                    </div>
+                    <div class="wchub-where">Los Angeles</div>
+                </div>
+                <div class="wchub-card" tabindex="0">
+                    <div class="wchub-when">Sat 11 Jul · 23:00</div>
+                    <div class="wchub-teams">
+                        <span class="t tbd"><span class="flag q">🇧🇷</span>Brazil / Norway</span>
+                        <span class="t tbd"><span class="flag q">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>Mexico / England</span>
+                    </div>
+                    <div class="wchub-where">Miami</div>
+                </div>
+                <div class="wchub-card" tabindex="0">
+                    <div class="wchub-when">Sun 12 Jul · 03:00</div>
+                    <div class="wchub-teams">
+                        <span class="t tbd"><span class="flag q">🇦🇷</span>Argentina / Egypt</span>
+                        <span class="t tbd"><span class="flag q">🇨🇴</span>Colombia / Switzerland</span>
+                    </div>
+                    <div class="wchub-where">Kansas City</div>
+                </div>
+            </div>
+        </section>
+        <aside class="wchub-cta">
+            <div class="copy">
+                <strong>Every knockout match. All in 4K.</strong>
+                <span>No blackouts, no cable package, no contract &mdash; just the World Cup.</span>
+            </div>
+            <a class="wchub-btn" href="#pricing">See plans →</a>
+        </aside>
+    </section>
+
     <section class="pricing" id="pricing">
         <div class="section-head">
             <span class="section-tag" data-i18n="pricingTag">Simple Pricing</span>
@@ -823,6 +1005,10 @@
                 <div class="price-convert">
                     <span class="convert-item">or <strong>&pound;17</strong> GBP</span>
                     <span class="convert-item"><strong>&euro;19</strong> EUR</span>
+                </div>
+                <div class="wc-addon">
+                    <span class="wc-addon-tag">⚽ <span data-i18n="wcAddonTag">World Cup</span></span>
+                    <span class="wc-addon-copy"><span data-i18n="wcAddon">Full tournament in 4K &mdash;</span> <span class="wc-addon-price">$27/mo</span></span>
                 </div>
                 <ul class="price-features">
                     <li data-i18n="feat49k">49,000+ Live Channels</li>
@@ -1133,6 +1319,8 @@
                 featPriority: "Priority Support",
                 featVIP: "VIP Support",
                 getMonthly: "Get Monthly",
+                wcAddonTag: "World Cup",
+                wcAddon: "Full tournament in 4K —",
                 get3Months: "Get 3 Months",
                 getAnnual: "Get Annual",
                 note7day: "7-day money-back guarantee",
@@ -1219,6 +1407,8 @@
                 featPriority: "Prioritäts-Support",
                 featVIP: "VIP-Support",
                 getMonthly: "Monatlich Buchen",
+                wcAddonTag: "WM 2026",
+                wcAddon: "Komplettes Turnier in 4K —",
                 get3Months: "3 Monate Buchen",
                 getAnnual: "Jährlich Buchen",
                 note7day: "7-Tage-Geld-zurück-Garantie",
@@ -1304,6 +1494,8 @@
                 featPriority: "Support Prioritaire",
                 featVIP: "Support VIP",
                 getMonthly: "Choisir Mensuel",
+                wcAddonTag: "Coupe du Monde",
+                wcAddon: "Tournoi complet en 4K —",
                 get3Months: "Choisir 3 Mois",
                 getAnnual: "Choisir Annuel",
                 note7day: "Garantie remboursement 7 jours",
@@ -1389,6 +1581,8 @@
                 featPriority: "Prioriteit Support",
                 featVIP: "VIP Support",
                 getMonthly: "Kies Maandelijks",
+                wcAddonTag: "WK 2026",
+                wcAddon: "Volledig toernooi in 4K —",
                 get3Months: "Kies 3 Maanden",
                 getAnnual: "Kies Jaarlijks",
                 note7day: "7-dagen geld-terug-garantie",
@@ -1474,6 +1668,8 @@
                 featPriority: "Soporte Prioritario",
                 featVIP: "Soporte VIP",
                 getMonthly: "Obtener Mensual",
+                wcAddonTag: "Mundial",
+                wcAddon: "Torneo completo en 4K —",
                 get3Months: "Obtener 3 Meses",
                 getAnnual: "Obtener Anual",
                 note7day: "Garantía de devolución de 7 días",
