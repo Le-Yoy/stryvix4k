@@ -135,7 +135,7 @@
         }
         @keyframes pulse-dot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(1.2)}}
 
-        /* World Cup 2026 theme accents */
+        /* Season hub theme accents (gold accent reused from WC build) */
         .wc-ball{font-size:1.2rem;display:inline-block;animation:wc-bounce 1.4s ease-in-out infinite;}
         @keyframes wc-bounce{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-4px) rotate(20deg)}}
         .wc-chip{
@@ -735,7 +735,7 @@
             *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
         }
 
-        /* ===== World Cup Hub ===== */
+        /* ===== Season Hub (repurposed from WC hub) ===== */
         .wchub{max-width:1180px;margin:0 auto;padding:64px 24px 8px}
         .wchub-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-bottom:18px;margin-bottom:28px;border-bottom:1px solid rgba(255,255,255,.09);position:relative}
         .wchub-head::after{content:"";position:absolute;left:0;bottom:-1px;width:132px;height:2px;background:linear-gradient(90deg,var(--wc-gold),transparent)}
@@ -832,11 +832,11 @@
         <button class="lang-btn" data-lang="es">ES</button>
     </div>
 
-    <!-- World Cup 2026 Banner -->
-    <div class="laliga-banner" style="background:linear-gradient(135deg,#0a2540,#1a0b2e);border-top:2px solid var(--wc-gold);border-bottom:2px solid rgba(255,215,0,.35);padding:12px 20px;text-align:center;position:relative;z-index:999;">
+    <!-- New Season 2026-27 Banner -->
+    <div class="laliga-banner" style="background:linear-gradient(135deg,#667eea,#764ba2);border-top:2px solid rgba(255,255,255,.18);border-bottom:2px solid rgba(255,255,255,.22);padding:12px 20px;text-align:center;position:relative;z-index:999;">
         <div style="display:inline-flex;align-items:center;gap:8px;font-size:.85rem;font-weight:600;color:#fff;">
             <span class="wc-ball">⚽</span>
-            <span data-i18n="laligaBanner">WORLD CUP 2026: 🏆 France vs Spain (TUE 3PM ET · 8PM UK) | 🏴󠁧󠁢󠁥󠁮󠁧󠁿 Argentina vs England (WED 3PM ET · 8PM UK) — Watch in 4K</span>
+            <span data-i18n="laligaBanner">NEW SEASON: 🏆 Arsenal vs Man City (SUN 10AM ET · 3PM UK) | 🇪🇸 Sevilla vs Rayo (SAT 3:30PM ET · 8:30PM UK) — Watch in 4K</span>
         </div>
     </div>
 
@@ -847,8 +847,8 @@
         <div class="grid-pattern"></div>
 
         <div class="hero-content">
-            <div class="wc-chip"><span class="wc-ball">⚽</span> <span data-i18n="wcChip">WORLD CUP 2026 · EVERY MATCH LIVE IN 4K</span></div>
-            <div class="notice"><span data-i18n="notice">🏆 World Cup 2026: Every match LIVE in 4K • Premium IPTV from £17/month • WhatsApp:</span> <a href="https://wa.me/33773436514">+33 7 73 43 65 14</a></div>
+            <div class="wc-chip"><span class="wc-ball">⚽</span> <span data-i18n="wcChip">FOOTBALL IS BACK · EVERY MATCH LIVE IN 4K</span></div>
+            <div class="notice"><span data-i18n="notice">⚽ New season, every match LIVE in 4K • Premium IPTV from £17/month • WhatsApp:</span> <a href="https://wa.me/33773436514">+33 7 73 43 65 14</a></div>
             <div class="badge"><span class="badge-dot"></span> <span data-i18n="badge">50,847 Active Subscribers</span></div>
             <h1 class="hero-title"><span data-i18n="heroTitle1">Stryvix4k - Stream Everything.</span> <span data-i18n="heroTitle2">Pay Less.</span></h1>
             <p class="hero-sub" data-i18n="heroSub">Access <strong>49,000+ live channels</strong> and <strong>80,000+ movies</strong> in stunning 4K. No contracts, no hidden fees. Just entertainment.</p>
@@ -875,87 +875,105 @@
         </div>
     </section>
 
-    <!-- World Cup 2026 Hub -->
+    <!-- 2026-27 Season Restart Hub -->
     <section class="wchub" id="worldcup">
         <div class="wchub-head">
             <div>
-                <div class="wchub-eyebrow">World Cup 2026 · Knockout Rounds</div>
-                <h2>Road to the Final</h2>
+                <div class="wchub-eyebrow">2026-27 Season · Opening Weekend</div>
+                <h2>The football is back</h2>
             </div>
-            <div class="wchub-stamp"><span class="d"></span>Updated 14 Jul — France vs Spain tonight</div>
+            <div class="wchub-stamp"><span class="d"></span>Updated 14 Aug — La Liga, Community Shield &amp; Eredivisie this weekend</div>
         </div>
         <div class="wchub-grid">
             <article class="wchub-feature">
                 <div class="glow"></div>
-                <span class="wchub-tag">🏆 Semi-final · Tonight</span>
-                <h3>France and Spain collide for a place in the final</h3>
-                <p>The two form teams of the tournament meet tonight in Dallas — the most lethal attack against the meanest defence. <b>Mbappé's France</b>, joint-top scorers of the tournament, take on a <b>Spain</b> side that has not conceded a single goal in six games. Something has to give.</p>
+                <span class="wchub-tag">🏆 Season opener · Sunday</span>
+                <h3>Arsenal and Man City raise the curtain in Cardiff</h3>
+                <p>The first silverware of the English season. <b>Arsenal</b>, crowned Premier League champions last May, take on <b>Manchester City</b>, the FA Cup holders, in the Community Shield — a full-strength dress rehearsal before the league restarts on 22 August.</p>
                 <div class="wchub-fx">
-                    <span class="side"><span class="flag">🇫🇷</span>France</span>
+                    <span class="side"><span class="flag">🔴</span>Arsenal</span>
                     <span class="vs">vs</span>
-                    <span class="side">Spain<span class="flag">🇪🇸</span></span>
+                    <span class="side">Man City<span class="flag">🔵</span></span>
                 </div>
                 <div class="wchub-meta">
-                    <span>🕘 21:00 CET · 3:00 PM ET</span>
-                    <span>📍 Dallas Stadium</span>
+                    <span>🕘 16:00 CEST · 3:00 PM UK</span>
+                    <span>📍 Principality Stadium, Cardiff</span>
                 </div>
-                <a class="wchub-btn" href="https://wa.me/33773436514?text=Hi!%20I%20want%20to%20watch%20the%20World%20Cup%20in%204K">Watch live in 4K →</a>
+                <a class="wchub-btn" href="https://wa.me/33773436514?text=Hi!%20I%20want%20to%20watch%20the%20new%20season%20in%204K">Watch live in 4K →</a>
             </article>
             <div class="wchub-side">
                 <section class="wchub-panel">
-                    <div class="wchub-panel-head"><h4>Latest Results</h4><span class="wchub-round">Quarter-finals</span></div>
-                    <ul class="wchub-results">
-                        <li class="wchub-result">
-                            <span class="wchub-team"><span class="flag">🇳🇴</span>Norway</span>
-                            <span class="wchub-score">1&ndash;2</span>
-                            <span class="wchub-team away">England<span class="flag">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span></span>
-                            <span class="wchub-cap"><b>FT (AET)</b> · Miami · Bellingham brace edges Haaland's Norway</span>
+                    <div class="wchub-panel-head"><h4>Kicking Off This Weekend</h4><span class="wchub-round">15–17 Aug</span></div>
+                    <ul class="wchub-fixtures">
+                        <li class="wchub-fixture">
+                            <span class="wchub-fmatch"><span class="flag">🇪🇸</span>Sevilla <span class="sep">vs</span> Rayo Vallecano</span>
+                            <span class="wchub-ftime">Sat 21:30</span>
+                            <span class="wchub-fcap">LaLiga · Matchday 1 · Sánchez-Pizjuán</span>
                         </li>
-                        <li class="wchub-result">
-                            <span class="wchub-team"><span class="flag">🇦🇷</span>Argentina</span>
-                            <span class="wchub-score">3&ndash;1</span>
-                            <span class="wchub-team away">Switzerland<span class="flag">🇨🇭</span></span>
-                            <span class="wchub-cap"><b>FT (AET)</b> · Kansas City · Álvarez sinks 10-man Switzerland</span>
+                        <li class="wchub-fixture">
+                            <span class="wchub-fmatch"><span class="flag">🇪🇸</span>Racing <span class="sep">vs</span> Villarreal</span>
+                            <span class="wchub-ftime">Sun 17:00</span>
+                            <span class="wchub-fcap">LaLiga · Matchday 1 · El Sardinero</span>
+                        </li>
+                        <li class="wchub-fixture">
+                            <span class="wchub-fmatch"><span class="flag">🇳🇱</span>Ajax <span class="sep">vs</span> Heerenveen</span>
+                            <span class="wchub-ftime">Sun 16:45</span>
+                            <span class="wchub-fcap">Eredivisie · Johan Cruijff ArenA</span>
                         </li>
                     </ul>
                 </section>
                 <section class="wchub-panel">
-                    <div class="wchub-panel-head"><h4>Tonight</h4><span class="wchub-round wchub-live">Live in 4K</span></div>
+                    <div class="wchub-panel-head"><h4>The Main Event</h4><span class="wchub-round wchub-live">Live in 4K</span></div>
                     <ul class="wchub-fixtures">
                         <li class="wchub-fixture">
-                            <span class="wchub-fmatch"><span class="flag">🇫🇷</span>France <span class="sep">vs</span> Spain<span class="flag">🇪🇸</span></span>
-                            <span class="wchub-ftime">21:00</span>
-                            <span class="wchub-fcap">Semi-final · Dallas · tonight, 21:00 CET / 3PM ET</span>
+                            <span class="wchub-fmatch"><span class="flag">🏆</span>Arsenal <span class="sep">vs</span> Man City</span>
+                            <span class="wchub-ftime">Sun 16:00</span>
+                            <span class="wchub-fcap">FA Community Shield · Cardiff · 16:00 CEST / 3PM UK</span>
                         </li>
                     </ul>
                 </section>
             </div>
         </div>
         <section class="wchub-qf">
-            <div class="wchub-qf-head"><h4>Semi-finals</h4><span>14&ndash;15 July · winners into the final (Jul 19)</span></div>
+            <div class="wchub-qf-head"><h4>The big leagues return</h4><span>Premier League, Bundesliga &amp; Ligue 1 all back by 22–23 August</span></div>
             <div class="wchub-rail">
                 <div class="wchub-card set" tabindex="0">
-                    <div class="wchub-when">Tue 14 Jul · 21:00 · Dallas</div>
+                    <div class="wchub-when">Fri 21 Aug · 20:45</div>
                     <div class="wchub-teams">
-                        <span class="t"><span class="flag">🇫🇷</span>France</span>
-                        <span class="t"><span class="flag">🇪🇸</span>Spain</span>
+                        <span class="t"><span class="flag">🇫🇷</span>Marseille</span>
+                        <span class="t"><span class="flag">⚽</span>Strasbourg</span>
                     </div>
-                    <div class="wchub-where">Tonight · winner into the final</div>
+                    <div class="wchub-where">Ligue 1 is back · Matchday 1</div>
                 </div>
                 <div class="wchub-card set" tabindex="0">
-                    <div class="wchub-when">Wed 15 Jul · 21:00 · Atlanta</div>
+                    <div class="wchub-when">Sat 22 Aug · 20:30</div>
                     <div class="wchub-teams">
-                        <span class="t"><span class="flag">🇦🇷</span>Argentina</span>
-                        <span class="t"><span class="flag">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>England</span>
+                        <span class="t"><span class="flag">🔴</span>Bayern</span>
+                        <span class="t"><span class="flag">🟡</span>Dortmund</span>
                     </div>
-                    <div class="wchub-where">The old rivalry, renewed</div>
+                    <div class="wchub-where">Der Klassiker · Supercup · Dortmund</div>
+                </div>
+                <div class="wchub-card set" tabindex="0">
+                    <div class="wchub-when">Sat 22 Aug</div>
+                    <div class="wchub-teams">
+                        <span class="t"><span class="flag">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>Premier League</span>
+                    </div>
+                    <div class="wchub-where">Matchweek 1 kicks off</div>
+                </div>
+                <div class="wchub-card set" tabindex="0">
+                    <div class="wchub-when">26–27 Aug</div>
+                    <div class="wchub-teams">
+                        <span class="t"><span class="flag">🇪🇸</span>Real Madrid</span>
+                        <span class="t"><span class="flag">🇪🇸</span>Barcelona</span>
+                    </div>
+                    <div class="wchub-where">LaLiga giants make their debut</div>
                 </div>
             </div>
         </section>
         <aside class="wchub-cta">
             <div class="copy">
-                <strong>Every knockout match. All in 4K.</strong>
-                <span>No blackouts, no cable package, no contract &mdash; just the World Cup.</span>
+                <strong>Every match. Every league. All in 4K.</strong>
+                <span>No blackouts, no cable package, no contract &mdash; just football.</span>
             </div>
             <a class="wchub-btn" href="#pricing">See plans →</a>
         </aside>
@@ -984,10 +1002,6 @@
                 <div class="price-convert">
                     <span class="convert-item">or <strong>&pound;17</strong> GBP</span>
                     <span class="convert-item"><strong>&euro;19</strong> EUR</span>
-                </div>
-                <div class="wc-addon">
-                    <span class="wc-addon-tag">⚽ <span data-i18n="wcAddonTag">World Cup</span></span>
-                    <span class="wc-addon-copy"><span data-i18n="wcAddon">Full tournament in 4K &mdash;</span> <span class="wc-addon-price">$27/mo</span></span>
                 </div>
                 <ul class="price-features">
                     <li data-i18n="feat49k">49,000+ Live Channels</li>
@@ -1229,37 +1243,39 @@
 
     <script>
         // Weekend Match Data - UPDATE WEEKLY OR MID-WEEK FOR CHAMPIONS LEAGUE
-        // Date Range: June 21-27, 2026 — FIFA World Cup 2026 group stage (geo-targeted per language)
-        // Updated: May 7, 2026 — 100% verified (FCBarcelona.com, RealMadrid.com, PSG.fr, Bundesliga.com, ChelseaFC.com, Feyenoord)
-        // World Cup 2026 — group stage (CET). Source: Euronews WC2026 EU kickoff guide.
+        // Date Range: Aug 15-17, 2026 — 2026-27 season opening weekend (geo-targeted per language)
+        // Updated: Aug 14, 2026 — 100% verified (thefa.com, Wikipedia, eldiario.es, Sevilla FC, fcupdate.nl, voetbalprimeur.nl)
+        // Note: PL/Ligue 1/Bundesliga all start Aug 21-23 (WC pushed calendar back); this weekend = La Liga J1 + Community Shield + Eredivisie. Big-3 Spanish clubs delayed to Aug 26-27.
         const weekendMatches = {
             fr: {
-                match1: { teams: "France vs Espagne", time: "MAR 21:00", league: "Coupe du Monde · Demi-finale", flag: "🇫🇷" },
-                match2: { teams: "Argentine vs Angleterre", time: "MER 21:00", league: "Coupe du Monde · Demi-finale", flag: "🏆" }
+                match1: { teams: "Arsenal vs Man City", time: "DIM 16:00", league: "Community Shield", flag: "🏆" },
+                match2: { teams: "Séville vs Rayo Vallecano", time: "SAM 21:30", league: "La Liga · J1", flag: "🇪🇸" }
             },
             de: {
-                match1: { teams: "Frankreich vs Spanien", time: "DI 21:00", league: "WM 2026 · Halbfinale", flag: "🏆" },
-                match2: { teams: "Argentinien vs England", time: "MI 21:00", league: "WM 2026 · Halbfinale", flag: "🏆" }
+                match1: { teams: "Arsenal vs Man City", time: "SO 16:00", league: "Community Shield", flag: "🏆" },
+                match2: { teams: "Sevilla vs Rayo Vallecano", time: "SA 21:30", league: "La Liga · 1. Spieltag", flag: "🇪🇸" }
             },
             es: {
-                match1: { teams: "España vs Francia", time: "MAR 21:00", league: "Mundial 2026 · Semifinal", flag: "🇪🇸" },
-                match2: { teams: "Argentina vs Inglaterra", time: "MIÉ 21:00", league: "Mundial 2026 · Semifinal", flag: "🇦🇷" }
+                match1: { teams: "Sevilla vs Rayo Vallecano", time: "SÁB 21:30", league: "LaLiga · Jornada 1", flag: "🇪🇸" },
+                match2: { teams: "Racing vs Villarreal", time: "DOM 17:00", league: "LaLiga · Jornada 1", flag: "⚽" }
             },
             nl: {
-                match1: { teams: "Frankrijk vs Spanje", time: "DI 21:00", league: "WK 2026 · Halve finale", flag: "🏆" },
-                match2: { teams: "Argentinië vs Engeland", time: "WO 21:00", league: "WK 2026 · Halve finale", flag: "🏆" }
+                match1: { teams: "Ajax vs Heerenveen", time: "ZO 16:45", league: "Eredivisie", flag: "🇳🇱" },
+                match2: { teams: "Arsenal vs Man City", time: "ZO 16:00", league: "Community Shield", flag: "🏆" }
             },
             en: {
-                match1: { teams: "France vs Spain", time: "TUE 3PM ET · 8PM UK", league: "World Cup · Semi-final", flag: "🏆" },
-                match2: { teams: "Argentina vs England", time: "WED 3PM ET · 8PM UK", league: "World Cup · Semi-final", flag: "🏴󠁧󠁢󠁥󠁮󠁧󠁿" }
+                match1: { teams: "Arsenal vs Man City", time: "SUN 10AM ET · 3PM UK", league: "FA Community Shield", flag: "🏆" },
+                match2: { teams: "Sevilla vs Rayo Vallecano", time: "SAT 3:30PM ET · 8:30PM UK", league: "La Liga · MD1", flag: "🇪🇸" }
             }
         };
 
         // Translations (adapted from Vexacast for Stryvix4k)
         const translations = {
             en: {
-                wcChip: "🇺🇸🏴󠁧󠁢󠁥󠁮󠁧󠁿 WORLD CUP 2026 · EVERY MATCH LIVE IN 4K",
-                notice: "🇺🇸🏴󠁧󠁢󠁥󠁮󠁧󠁿 World Cup 2026: every USA & England match LIVE in 4K • Premium IPTV from £17/month • WhatsApp:",
+                wcChip: "FOOTBALL IS BACK · EVERY MATCH LIVE IN 4K",
+                notice: "⚽ New season, every match LIVE in 4K • Premium IPTV from £17/month • WhatsApp:",
+                bannerPrefix: "NEW SEASON",
+                bannerSuffix: "Watch in 4K",
                 badge: "50,847 Active Subscribers",
                 heroTitle1: "Stryvix4k - Stream Everything.",
                 heroTitle2: "Pay Less.",
@@ -1298,8 +1314,6 @@
                 featPriority: "Priority Support",
                 featVIP: "VIP Support",
                 getMonthly: "Get Monthly",
-                wcAddonTag: "World Cup",
-                wcAddon: "Full tournament in 4K —",
                 get3Months: "Get 3 Months",
                 getAnnual: "Get Annual",
                 note7day: "7-day money-back guarantee",
@@ -1346,8 +1360,10 @@
                 navReviews: "Reviews"
             },
             de: {
-                wcChip: "WM 2026 · JEDES SPIEL LIVE IN 4K",
-                notice: "🏆 WM 2026: Jedes Spiel LIVE in 4K • Premium IPTV ab £17/Monat • WhatsApp:",
+                wcChip: "FUSSBALL IST ZURÜCK · JEDES SPIEL LIVE IN 4K",
+                notice: "⚽ Neue Saison, jedes Spiel LIVE in 4K • Premium IPTV ab £17/Monat • WhatsApp:",
+                bannerPrefix: "NEUE SAISON",
+                bannerSuffix: "In 4K ansehen",
                 badge: "50.847 Aktive Abonnenten",
                 heroTitle1: "Stryvix4k - Alles streamen.",
                 heroTitle2: "Weniger zahlen.",
@@ -1386,8 +1402,6 @@
                 featPriority: "Prioritäts-Support",
                 featVIP: "VIP-Support",
                 getMonthly: "Monatlich Buchen",
-                wcAddonTag: "WM 2026",
-                wcAddon: "Komplettes Turnier in 4K —",
                 get3Months: "3 Monate Buchen",
                 getAnnual: "Jährlich Buchen",
                 note7day: "7-Tage-Geld-zurück-Garantie",
@@ -1433,8 +1447,10 @@
                 navReviews: "Bewertungen"
             },
             fr: {
-                wcChip: "COUPE DU MONDE 2026 · CHAQUE MATCH EN DIRECT EN 4K",
-                notice: "🏆 Coupe du Monde 2026: Chaque match EN DIRECT en 4K • IPTV Premium dès £17/mois • WhatsApp:",
+                wcChip: "LE FOOTBALL EST DE RETOUR · CHAQUE MATCH EN DIRECT EN 4K",
+                notice: "⚽ Nouvelle saison, chaque match EN DIRECT en 4K • IPTV Premium dès £17/mois • WhatsApp:",
+                bannerPrefix: "NOUVELLE SAISON",
+                bannerSuffix: "À suivre en 4K",
                 badge: "50 847 Abonnés Actifs",
                 heroTitle1: "Stryvix4k - Streamez Tout.",
                 heroTitle2: "Payez Moins.",
@@ -1473,8 +1489,6 @@
                 featPriority: "Support Prioritaire",
                 featVIP: "Support VIP",
                 getMonthly: "Choisir Mensuel",
-                wcAddonTag: "Coupe du Monde",
-                wcAddon: "Tournoi complet en 4K —",
                 get3Months: "Choisir 3 Mois",
                 getAnnual: "Choisir Annuel",
                 note7day: "Garantie remboursement 7 jours",
@@ -1520,8 +1534,10 @@
                 navReviews: "Avis"
             },
             nl: {
-                wcChip: "WK 2026 · ELKE WEDSTRIJD LIVE IN 4K",
-                notice: "🏆 WK 2026: Elke wedstrijd LIVE in 4K • Premium IPTV vanaf £17/maand • WhatsApp:",
+                wcChip: "HET VOETBAL IS TERUG · ELKE WEDSTRIJD LIVE IN 4K",
+                notice: "⚽ Nieuw seizoen, elke wedstrijd LIVE in 4K • Premium IPTV vanaf £17/maand • WhatsApp:",
+                bannerPrefix: "NIEUW SEIZOEN",
+                bannerSuffix: "Kijk in 4K",
                 badge: "50.847 Actieve Abonnees",
                 heroTitle1: "Stryvix4k - Stream Alles.",
                 heroTitle2: "Betaal Minder.",
@@ -1560,8 +1576,6 @@
                 featPriority: "Prioriteit Support",
                 featVIP: "VIP Support",
                 getMonthly: "Kies Maandelijks",
-                wcAddonTag: "WK 2026",
-                wcAddon: "Volledig toernooi in 4K —",
                 get3Months: "Kies 3 Maanden",
                 getAnnual: "Kies Jaarlijks",
                 note7day: "7-dagen geld-terug-garantie",
@@ -1607,8 +1621,10 @@
                 navReviews: "Beoordelingen"
             },
             es: {
-                wcChip: "MUNDIAL 2026 · CADA PARTIDO EN DIRECTO EN 4K",
-                notice: "🏆 Mundial 2026: Cada partido EN DIRECTO en 4K • IPTV Premium desde £17/mes • WhatsApp:",
+                wcChip: "VUELVE EL FÚTBOL · CADA PARTIDO EN DIRECTO EN 4K",
+                notice: "⚽ Nueva temporada, cada partido EN DIRECTO en 4K • IPTV Premium desde £17/mes • WhatsApp:",
+                bannerPrefix: "NUEVA TEMPORADA",
+                bannerSuffix: "Míralo en 4K",
                 badge: "50.847 Suscriptores Activos",
                 heroTitle1: "Stryvix4k - Transmite Todo.",
                 heroTitle2: "Paga Menos.",
@@ -1647,8 +1663,6 @@
                 featPriority: "Soporte Prioritario",
                 featVIP: "Soporte VIP",
                 getMonthly: "Obtener Mensual",
-                wcAddonTag: "Mundial",
-                wcAddon: "Torneo completo en 4K —",
                 get3Months: "Obtener 3 Meses",
                 getAnnual: "Obtener Anual",
                 note7day: "Garantía de devolución de 7 días",
@@ -1712,7 +1726,10 @@
             const bannerElement = document.querySelector('.laliga-banner span[data-i18n="laligaBanner"]');
 
             if (bannerElement && matches) {
-                const bannerText = `WORLD CUP 2026: ${matches.match1.flag} ${matches.match1.teams} (${matches.match1.time}) | ${matches.match2.flag} ${matches.match2.teams} (${matches.match2.time}) — Watch in 4K`;
+                const t = translations[lang] || translations.en;
+                const prefix = t.bannerPrefix || 'NEW SEASON';
+                const suffix = t.bannerSuffix || 'Watch in 4K';
+                const bannerText = `${prefix}: ${matches.match1.flag} ${matches.match1.teams} (${matches.match1.time}) | ${matches.match2.flag} ${matches.match2.teams} (${matches.match2.time}) — ${suffix}`;
                 bannerElement.textContent = bannerText;
             }
         }
