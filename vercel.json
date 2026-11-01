@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    { "source": "/", "destination": "/official/", "permanent": true },
+    { "source": "/index.html", "destination": "/official/", "permanent": true },
+    { "source": "/pricing", "destination": "/plans/", "permanent": true },
+    { "source": "/pricing/:path*", "destination": "/plans/", "permanent": true },
+    { "source": "/channels", "destination": "/official/", "permanent": true },
+    { "source": "/channels/:path*", "destination": "/official/", "permanent": true },
+    { "source": "/reviews", "destination": "/official/", "permanent": true },
+    { "source": "/reviews/:path*", "destination": "/official/", "permanent": true },
+    { "source": "/world-cup-2026", "destination": "/official/", "permanent": true },
+    { "source": "/world-cup-2026/:path*", "destination": "/official/", "permanent": true }
+  ]
+}
